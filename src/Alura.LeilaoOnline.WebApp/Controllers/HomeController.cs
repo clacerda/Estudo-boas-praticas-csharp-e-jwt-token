@@ -41,5 +41,12 @@ namespace Projeto.LeilaoOnline.WebApp.Controllers
             var leiloes = _service.PesquisaLeiloesEmPregaoPorTermo(termo);
             return View(leiloes);
         }
+
+        [Route("LoginController/Login/Login")]
+        public IActionResult Login()
+        {
+            var login = "Login";
+            return View(login);
+        }
     }
 }
